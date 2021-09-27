@@ -17,11 +17,12 @@ a {
 
 #main {
     animation: ease-in 500ms smooth;
+    animation-delay: 200ms;
 }
 
 #easein {
     animation: ease-in 500ms smooth;
-    animation-delay: 100ms;
+    animation-delay: 300ms;
 }
 
 #morelinks {
@@ -31,7 +32,7 @@ a {
     border-color: rgb(0, 0, 0);
     border-bottom-color: darkslateblue;
     animation: ease-in 500ms line;
-    animation-delay: 200ms;
+    animation-delay: 400ms;
 }
 
 @keyframes smooth {
