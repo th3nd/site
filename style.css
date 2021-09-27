@@ -14,11 +14,16 @@ a {
 }
 
 #top {
-    padding-top: 10%;
+    padding-top: 0%;
+}
+
+#main {
+    animation: ease-in 500ms smooth;
 }
 
 #easein {
     animation: ease-in 500ms smooth;
+    animation-delay: 100ms;
 }
 
 #morelinks {
@@ -28,7 +33,7 @@ a {
     border-color: rgb(0, 0, 0);
     border-bottom-color: darkslateblue;
     animation: ease-in 500ms line;
-    animation-delay: 100ms;
+    animation-delay: 200ms;
 }
 
 @keyframes smooth {
