@@ -11,6 +11,14 @@ a {
     /* för att få bort underlines (ghetto) */
 }
 
+img {
+    max-width: 20%;
+    height: auto;
+    -webkit-filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    animation: ease-in 500ms svg;
+}
+
 #top {
     padding-top: 0%;
 }
@@ -33,6 +41,32 @@ a {
     border-bottom-color: darkslateblue;
     animation: ease-in 500ms line;
     animation-delay: 400ms;
+}
+
+/*      more sidan      */
+
+#spacer { padding-top: 10%; }
+#parent { white-space: nowrap; }
+
+#underrubrik {
+    animation: ease-in 500ms smooth;
+    font-style: italic;
+    display: inline-block;
+    margin: auto;
+    width: 18%;
+    text-align: center;
+    padding: 1%;
+}
+
+#child {
+    padding: 1%;
+    border: 1px;
+    border-color: darkslateblue;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    margin: auto;
+    width: 18%;
 }
 
 @keyframes smooth {
@@ -73,5 +107,12 @@ a {
 
         color: darkslateblue;
         text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    }
+}
+
+@keyframes svg {
+    0% {
+        -webkit-filter: drop-shadow(0px 0px 0px rgb(0, 0, 0));
+        filter: drop-shadow(0px 0px 0px rgb(0, 0, 0));
     }
 }
