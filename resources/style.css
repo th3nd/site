@@ -1,0 +1,183 @@
+body {
+    background-color: black;
+    height: 100%; 
+    overflow: hidden
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    -webkit-filter: blur(8px);
+}
+
+#bg_vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#button {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    color: lavender;
+    border: none;
+    text-shadow: 0px 0px 5px lavender;
+    animation: btn 500ms linear;
+}
+
+#wrap {
+    display: none; 
+    text-align: center;
+    padding-top: 18%;
+}
+
+h1 {
+    color: rgb(78, 49, 92);
+    -webkit-text-stroke: 1px rgb(139, 95, 172); /* width and color */
+    text-shadow: 0px 0px 10px rgb(139, 95, 172);
+    animation: btn 500ms linear;
+}
+
+p {
+    position: relative;
+    top: -10px;
+    font-style: italic;
+    font-family: Times;
+    font-weight: bolder;
+    color: lavender;
+    text-shadow: 0px 0px 5px lavender;
+    opacity: 1;
+    animation: from_invisible 500ms linear;
+}
+
+a {
+    color: lavender;
+    text-decoration: wavy;
+    font-family: monospace;
+    font-size: 1em;
+
+}
+
+img {
+    position: relative;
+    top: 5px;
+}
+
+#linkparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: typing 4s steps(12) infinite, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    display: inline;
+}
+
+@keyframes btn{
+    from {
+        text-shadow: none;
+    }
+}
+
+@keyframes from_invisible {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+    20% {
+        width: 12ch;
+    }
+    50% {
+        width: 12ch;
+    }
+    70% {
+        width: 0ch;
+    }
+    100% {
+        width: 0ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+/*      moreInfo page       */
+
+#parent { 
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+#child {
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+    width: 40%;
+
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    padding: 2%;
+    font-size: x-small;
+    font-style: normal;
+}
+
+#moreInfo {
+    border: 1px solid lavender;
+    text-align: center;
+    display: none;
+    height: fit-content;
+    margin: 15%;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+#back {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: from_invisible ease-in 500ms;
+    opacity: 1;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: x-small;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#acc {
+    position: relative;
+    top: -10px;
+}
