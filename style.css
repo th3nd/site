@@ -55,3 +55,20 @@ input {
 p {
     font-size: small;
 }
+
+p#l {
+    color: rgb(100, 100, 100)
+}
+
+p#l:hover {
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+p#green {
+    color: rgb(100, 200, 100)
+}
+
+#grey {
+    color: rgb(100, 100, 100)
+}
