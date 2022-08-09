@@ -1,3 +1,3 @@
 ### src to my personal site
 
-not really that cool or useful
+not really that cool / useful
