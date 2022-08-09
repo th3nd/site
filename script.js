@@ -18,7 +18,7 @@ document.addEventListener("keyup", function(e) {
 function validate(txt) {
     const content = document.getElementById('content');
 
-    if (content.offsetHeight > 400) {
+    if (content.offsetHeight > (screen.height * 0.65)) {
         content.innerHTML = ""
     }
 
@@ -64,8 +64,11 @@ function validate(txt) {
         case "succ":
             content.innerHTML += "<p id='green'>" + "success." + "</p>"
             break
+        case "ree":
+            content.innerHTML += "<p id='red'>" + "doesnt work lmao" + "</p>"
+            break
         default:
-            content.innerHTML += "<p style='color: rgb(200, 100, 100)'>" + "not a valid command. type 'help' for a list of commands." + "</p>"
+            content.innerHTML += "<p id='red'>" + "not a valid command. type 'help' for a list of commands." + "</p>"
             break
     }
 }
